@@ -42,11 +42,11 @@ export function CyclesContextProvider({
          activeCycleId: null,
       },
       () => {
-         const storageStateAtJSON = localStorage.getItem(
+         const storedStateAsJSON = localStorage.getItem(
             '@mind-timer:cycles-state-1.0.0'
          );
-         if (storageStateAtJSON) {
-            return JSON.parse(storageStateAtJSON);
+         if (storedStateAsJSON) {
+            return JSON.parse(storedStateAsJSON);
          }
       }
    );
