@@ -22,7 +22,7 @@ export function Header() {
       <nav>
         <SwitchThemeContainer>
           <Palette size={26} />
-          <label>Tema</label>
+          <label>Theme</label>
           <SwitchThemeRoot checked={isLightMode} onCheckedChange={toggleTheme}>
             <SwitchThemeThumb />
           </SwitchThemeRoot>
